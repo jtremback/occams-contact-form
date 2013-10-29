@@ -11,6 +11,10 @@ var app = express();
 
 app.use(express.bodyParser());
 
+app.get('/', function(req, res) {
+  res.send('Occam\'s contact form is running.');
+});
+
 app.post('/', function(req) {
   var req_body = req.body
     , email_body = ''
