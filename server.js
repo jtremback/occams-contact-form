@@ -15,7 +15,7 @@ app.get('/', function(req, res) {
   res.send('Occam\'s contact form is running.');
 });
 
-app.post('/', function(req) {
+app.post('/', function(req, res) {
   var req_body = req.body
     , email_body = ''
   ;
@@ -34,6 +34,7 @@ app.post('/', function(req) {
   }, function(err, json) {
     if (err) { return console.error(err); }
     console.log(json);
+    res.send('200 OK');
   });
 });
 
