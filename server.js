@@ -34,7 +34,7 @@ app.post('/', function(req, res) {
   }, function(err, json) {
     if (err) { return console.error(err); }
     console.log(json);
-    res.send('200 OK');
+    res.send('200');
   });
 });
 
