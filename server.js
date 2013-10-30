@@ -37,7 +37,7 @@ app.post('/', function(req) {
   });
 });
 
-app.listen(8080);
-console.log('Express started on port 8080');
+app.listen(80);
+console.log('Express started on port 80');
 
 
