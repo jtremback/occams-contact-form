@@ -22,7 +22,7 @@ app.post('/', function(req) {
 
   for (var field in req_body) {
     email_body += field + ': ';
-    email_body += req_body[field] + ', ';
+    email_body += req_body[field] + '\n';
   }
 
   // Send the email.
