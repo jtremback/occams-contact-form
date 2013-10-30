@@ -37,7 +37,9 @@ app.post('/', function(req) {
   });
 });
 
-app.listen(80);
-console.log('Express started on port 80');
+var port = process.env.PORT || 5000;
+app.listen(port, function() {
+  console.log('Listening on ' + port);
+});
 
 
